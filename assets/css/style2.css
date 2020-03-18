@@ -1258,7 +1258,7 @@ h6 {
 }
 
 .cta-three__shape-3 {
-	bottom: 15%;
+	bottom: 2%;
 	right: 0;
 	-webkit-transform-origin: center bottom;
 	transform-origin: center bottom;
@@ -2749,8 +2749,8 @@ h6 {
 }
 
 .faq-one__shape-3 {
-	left: 4%;
-	bottom: -4%;
+	left: 0;
+	bottom: -8%;
 	z-index: 11;
 	-webkit-transform-origin: center bottom;
 	transform-origin: center bottom;
