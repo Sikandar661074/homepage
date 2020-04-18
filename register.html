@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/d0c3646a7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .banner {
+            background: #fff;
+        }
+
+        .slide {
+            box-shadow: 0px 10px 0px #ddd, 0 10px 0px #ccc;
+        }
+
+        .container {
+            width: 87%;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        .containertwo {
+            margin-top: 60px;
+            box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+        }
+
+        .box {
+            width: 100%;
+            height: 400px;
+        }
+
+        .first {
+            background-image: linear-gradient(90deg, rgb(74, 14, 143) 0%, rgb(180, 48, 167) 100%);
+        }
+
+        .second {
+            background-image: linear-gradient(90deg, #0349a6 0%, #15c27b 100%);
+        }
+
+        .third {
+            background-image: linear-gradient(90deg, #e41256 0%, #ffa337 100%);
+        }
+
+        .in {
+            width: 100%;
+            height: 80px;
+            background: rgba(135, 207, 235, 0.548);
+            position: relative;
+            top: 90px;
+            z-index: 10;
+            margin: 0 auto;
+        }
+
+        .in p {
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            z-index: 1000;
+            font-weight: 500;
+            margin-left: 80px;
+
+        }
+
+        .in a {
+            position: relative;
+            left: 23%;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        section {
+            margin-bottom: 50px;
+            padding: 0 50px;
+        }
+
+        .minihead {
+            color: #899EA7;
+            font-weight: 600;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: .5px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .two ul li {
+            list-style-type: disc;
+        }
+
+        h3 {
+            text-align: left;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+            margin: 50px auto;
+        }
+        ol li{
+            font-size:21px;
+        }
+        h4{
+            letter-spacing: 0.1px;
+            font-weight: 500;
+        }
+        .one h3{
+            text-align:left;
+        }
+
+
+        .three div {
+            margin-top: 50px;
+
+        }
+
+        div a {
+            text-decoration: none;
+            font-size:16px;
+        }
+
+        .four div h3 {
+            font-weight: 500;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #357ffa;
+            color: #fff;
+            border: none;
+            font-size: .9rem;
+            color: #fff;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .two i{
+            font-size:50px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .fa-phone-square-alt{
+            font-size: 20px;
+            margin:0;
+            margin-right: 5px;
+        }
+        .two p{
+            margin-left: 80px;
+        }
+        .tiers{
+            display: flex;
+            justify-content: space-between;
+        }
+        .tier{
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            width: 23%;
+            height: 250px;
+            box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+
+        }
+        .tier div{
+            /* background-color: #15c27b; */
+            width: 90%;
+            margin: 0 auto;
+            padding:15px 0;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        .tier p{
+            font-size: 18px;
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px;
+            font-weight: 500;
+        }
+        .form-input{
+            margin: 20px;
+            width:100%;
+            padding: 5px;
+            font-size: 15px;
+        }
+        .form-label{
+            margin: 10px;
+            font-size: 20px;
+
+        }
+        .button-submit{
+            margin: 20px;
+            font-size: 15px;
+            
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="banner">
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="in">
+                    <p>Join our Affiliate programme and earn up to 50% per subscription. <a href="#"
+                            style="text-decoration: none;"><button>Join Now</button></a></p>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- <img src="..." class="box one" alt="..."> -->
+                        <div class="box third">
+                            <h1>FIRST IMAGE</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="box two" alt="..."> -->
+                        <div class="box second">
+                            <h1>SECOND IMAGE</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="box three" alt="..."> -->
+                        <div class="box third">
+                            <h1>THIRD IMAGE</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="containertwo">
+
+            <section class="one">
+                <p class="minihead">STOCK ARENA</p>
+                <h1>REGISTER</h1>
+                <form class="form">
+                    <div class="form-label">Name: </div>
+                    <input type="text" class="form-input">
+                    <div class="form-label">Email Id: </div>
+                    <input type="email" class="form-input">
+                    <div class="form-label">Age: </div>
+                    <input type="number" class="form-input">
+                    <div class="form-label">Address: </div>
+                    <input type="text" class="form-input"><br>
+                    <input type="text" class="form-input"><br>
+                    <input type="text" class="form-input"><br>
+                    <div class="form-label">Phone Number: </div>
+                    <input type="tel" class="form-input">
+                    <br>
+                    <button class="button-submit"> Submit </button>
+
+                </form>
+
+                
+                
+            </section>
+
+                <!-- <h3>PROFIT SHARING SLABS</h3>
+                <ol>
+                <li>
+                     <h4>0-50 clients per month </h4> 
+                     <p>20% revenue sharing.</p>
+                    </li>
+                    <li>
+                        <h4>50-100 clients per month  </h4> 
+                        <p>30% revenue sharing.</p>
+                    </li>
+                    <li>
+                        <h4>100-300 clients per month  </h4> 
+                        <p>40% revenue sharing.</p>
+                    </li>
+                    <li>
+                        <h4>300+ clients per month  </h4> 
+                        <p>50% revenue sharing.</p>
+                    </li>
+                </ol> -->
+                
+            </section>
+            <hr>
+            <section class="five">
+                <h3>HAVE MORE QUESTIONS ?</h3>
+                <div>
+                <h4>Contact Us at</h4>
+                <p> <i class="fas fa-phone-square-alt"></i>+91-6361922946</p>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>
